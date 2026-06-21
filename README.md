@@ -66,7 +66,7 @@ Messages are stored in partitions, and consumers fetch them independently while 
 
 ---
 
-# ✨ Key Features
+# Key Features
 
 - **Push-Based Pub/Sub Implementation** — Demonstrates immediate message delivery from broker to subscribers.
 - **Pull-Based (Kafka-Inspired) Implementation** — Simulates producers, consumers, partitions, and offsets.
