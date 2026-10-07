@@ -4,7 +4,7 @@
 
 **Pub/Sub Theory & Practical** is a beginner-friendly repository that explains how modern messaging systems work by combining **theory with clean Python implementations**.
 
-Instead of treating concepts like **brokers, topics, partitions, offsets, producers, consumers, and replication** as interview buzzwords, this project builds them from scratch and explains *why they exist* and *how they interact*. The goal is to provide an intuitive mental model that makes understanding systems like **Apache Kafka**, **RabbitMQ**, **Google Pub/Sub**, and cloud event buses much easier.
+Instead of treating concepts like **brokers, topics, partitions, offsets, producers, consumers, and replication** as interview buzzwords, this project builds them from scratch and explains _why they exist_ and _how they interact_. The goal is to provide an intuitive mental model that makes understanding systems like **Apache Kafka**, **RabbitMQ**, **Google Pub/Sub**, and cloud event buses much easier.
 
 Whether you're preparing for placements, backend interviews, or learning distributed systems, this repository serves as a compact reference that you can revisit anytime.
 
@@ -124,14 +124,14 @@ No external dependencies are required.
 
 # Technology Stack
 
-| Component | Technology |
-| ---------- | ---------- |
-| Language | Python |
-| Paradigm | Object-Oriented Programming |
-| Architecture | Event-Driven Systems |
-| Concepts | Pub/Sub, Producers, Consumers, Brokers |
-| Scaling | Partitions, Hashing |
-| Reliability | Offsets, Replication Theory |
+| Component    | Technology                             |
+| ------------ | -------------------------------------- |
+| Language     | Python                                 |
+| Paradigm     | Object-Oriented Programming            |
+| Architecture | Event-Driven Systems                   |
+| Concepts     | Pub/Sub, Producers, Consumers, Brokers |
+| Scaling      | Partitions, Hashing                    |
+| Reliability  | Offsets, Replication Theory            |
 
 ---
 
@@ -337,13 +337,13 @@ If the leader fails, another replica can be promoted.
 
 # Push vs Pull
 
-| Push-Based | Pull-Based |
-|------------|-----------|
-| Broker sends messages immediately | Consumer requests messages |
-| Simpler design | Better scalability |
-| Usually no offsets | Uses offsets extensively |
-| Great for notifications | Great for streaming pipelines |
-| Real-time callbacks | Durable logs and replay |
+| Push-Based                        | Pull-Based                    |
+| --------------------------------- | ----------------------------- |
+| Broker sends messages immediately | Consumer requests messages    |
+| Simpler design                    | Better scalability            |
+| Usually no offsets                | Uses offsets extensively      |
+| Great for notifications           | Great for streaming pipelines |
+| Real-time callbacks               | Durable logs and replay       |
 
 ---
 
@@ -351,26 +351,26 @@ If the leader fails, another replica can be promoted.
 
 These solve different problems.
 
-| Partitioning | Replication |
-|--------------|-------------|
-| Scales throughput | Increases fault tolerance |
-| Splits data | Copies data |
-| Uses hashing | Uses synchronization |
-| Improves parallelism | Prevents data loss |
+| Partitioning         | Replication               |
+| -------------------- | ------------------------- |
+| Scales throughput    | Increases fault tolerance |
+| Splits data          | Copies data               |
+| Uses hashing         | Uses synchronization      |
+| Improves parallelism | Prevents data loss        |
 
 ---
 
 # Real-World Technologies
 
-| Technology | Model | Notes |
-|-----------|-------|------|
-| Apache Kafka | Pull | Partitioned logs with consumer-managed offsets |
-| RabbitMQ | Mostly Push | Queue-based broker supporting multiple messaging patterns |
-| Google Cloud Pub/Sub | Pull & Push | Supports subscribers polling or receiving pushed messages |
-| Apache Pulsar | Primarily Pull | Distributed messaging with partitions and durable storage |
-| Amazon Kinesis | Pull | Streaming platform with shard-based consumption |
-| Redis Pub/Sub | Push | Lightweight in-memory publish/subscribe with no durable history |
-| NATS | Push | High-performance messaging for microservices and event-driven systems |
+| Technology           | Model          | Notes                                                                 |
+| -------------------- | -------------- | --------------------------------------------------------------------- |
+| Apache Kafka         | Pull           | Partitioned logs with consumer-managed offsets                        |
+| RabbitMQ             | Mostly Push    | Queue-based broker supporting multiple messaging patterns             |
+| Google Cloud Pub/Sub | Pull & Push    | Supports subscribers polling or receiving pushed messages             |
+| Apache Pulsar        | Primarily Pull | Distributed messaging with partitions and durable storage             |
+| Amazon Kinesis       | Pull           | Streaming platform with shard-based consumption                       |
+| Redis Pub/Sub        | Push           | Lightweight in-memory publish/subscribe with no durable history       |
+| NATS                 | Push           | High-performance messaging for microservices and event-driven systems |
 
 ---
 
@@ -395,6 +395,6 @@ By reading the theory and experimenting with the implementations, you'll develop
 
 # ❤️ Made With Passion
 
-Made with ❤️ by **Divi Jaiwanth**
+Made with ❤️ by **SP Bharath**
 
 If this repository helped you understand distributed systems or prepare for interviews, consider giving it a ⭐ and sharing it with others learning backend engineering.
